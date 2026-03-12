@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    android:gravity="center"
+    android:background="#121212">
+
+    <!-- Login View -->
+    <LinearLayout
+        android:id="@+id/llLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RedAlert TV Setup"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textDirection="rtl"
+            android:gravity="right"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Checking overlay permission..."
+            android:textColor="#CCCCCC"
+            android:textDirection="rtl"
+            android:gravity="right"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center" />
+
+        <EditText
+            android:id="@+id/etInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone number or Code"
+            android:textColorHint="#888888"
+            android:textColor="#FFFFFF"
+            android:inputType="textNoSuggestions"
+            android:textDirection="rtl"
+            android:gravity="right"
+            android:background="#333333"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textDirection="rtl"
+            android:gravity="right"
+            android:backgroundTint="#D32F2F"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Dashboard View -->
+    <LinearLayout
+        android:id="@+id/llDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="מחובר בהצלחה למערכת ההתראות"
+            android:textSize="20sp"
+            android:textColor="#4CAF50"
+            android:textStyle="bold"
+            android:textDirection="rtl"
+            android:gravity="right"
+            android:layout_marginBottom="32dp" />
+
+        <Button
+            android:id="@+id/btnDemo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show Demo"
+            android:textDirection="rtl"
+            android:gravity="right"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textDirection="rtl"
+            android:gravity="right"
+            android:backgroundTint="#424242"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>
